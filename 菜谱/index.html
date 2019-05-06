@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/common/flexible.js"></script>
+    <script src="js/common/swiper-4.1.6.min.js"></script>
+    <script src="./js/common/zepto.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head">
+            <div class="img"></div>
+            <ul class="list">
+                <li class="active">精选</li>
+                <li>快手食谱</li>
+                <li>甜点饮品</li>
+                <li>生活百科</li>
+            </ul>
+        </div>
+        <div class="select swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/579945.jpg" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/579945.jpg" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/8.jpg" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/8.jpg" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/23.png" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                    <div class="con">
+                        <h3>
+                            <div class="img"></div>食语集
+                        </h3>
+                        <dl>
+                            <dd> <img src="images/23.png" alt=""></dd>
+                            <dt>[五彩青笋呛鸡丁] 色彩丰富到像画一般的美食</dt>
+                        </dl>
+                        <p> <span>浏览1205</span><span> <i class="icon iconfont icon-fenxiang3"></i>分享</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foot">
+            <dl>
+                <dd><i class="icon iconfont icon-shouye"></i></dd>
+                <dt>首页</dt>
+            </dl>
+            <dl>
+                <dd><i class="icon iconfont icon-gerenxinxi"></i></dd>
+                <dt>会员</dt>
+            </dl>
+            <dl class="else">
+                <dd><i class="icon iconfont icon-faxiandingdan"></i></dd>
+                <dt>发现</dt>
+            </dl>
+            <dl>
+                <dd><i class="icon iconfont icon-gouwuche-xuanzhong"></i></dd>
+                <dt>购物车</dt>
+            </dl>
+            <dl>
+                <dd> <i class="icon iconfont icon-wode-xuanzhong"></i>
+                </dd>
+                <dt>我的</dt>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var mySwipe = new Swiper(".select", {
+            on: {
+                slideChange: function() {
+                    var x = this.activeIndex;
+                    $(".list").find("li").eq(x).addClass("active").siblings().removeClass("active")
+                }
+            }
+        });
+        $(".list").on("click", "li", function() {
+            var ind = $(this).index();
+            mySwipe.slideTo(ind)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrap .head {
+  width: 100%;
+  height: 1.17333rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+.wrap .head .img {
+  width: 0.93333rem;
+  height: 0.93333rem;
+  border-radius: 50%;
+  background: url(../images/qq9.jpg);
+  background-size: 100% 100%;
+  margin: 0.10667rem 0.26667rem;
+}
+
+.wrap .head .list {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+.wrap .head .list li {
+  width: 100%;
+  height: 100%;
+  line-height: 1.17333rem;
+  text-align: center;
+}
+
+.wrap .active {
+  color: palevioletred;
+  border-bottom: 2px solid palevioletred;
+}
+
+.wrap .select {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide h3 {
+  margin-top: 0.26667rem;
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+.wrap .select .swiper-wrapper .swiper-slide h3 .img {
+  width: 0.93333rem;
+  height: 0.93333rem;
+  border-radius: 50%;
+  background: url(../images/qq9.jpg);
+  background-size: 100% 100%;
+  margin: 0.10667rem 0.26667rem;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide dl {
+  width: 100%;
+  padding: 0.13333rem 0.53333rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide dl dd {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide dl dd img {
+  width: 100%;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide dl dt {
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  font-weight: bold;
+}
+
+.wrap .select .swiper-wrapper .swiper-slide p {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 0.53333rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.foot {
+  width: 100%;
+  height: 1.17333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+.foot dl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.foot dl dd i {
+  font-size: 0.42667rem;
+}
+
+.foot .else {
+  color: palevioletred;
+}

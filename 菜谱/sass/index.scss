@@ -1,0 +1,116 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    //border: pxTorem(1px) solid #ccc;
+    @include direction(column);
+    .head {
+        width: 100%;
+        height: pxTorem(44px);
+        border-bottom: 1px solid #ccc;
+        @include box_flex;
+        .img {
+            width: pxTorem(35px);
+            height: pxTorem(35px);
+            border-radius: 50%;
+            background: url(../images/qq9.jpg);
+            background-size: 100% 100%;
+            margin: pxTorem(4px) pxTorem(10px);
+        }
+        .list {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            @include box_flex;
+            li {
+                width: 100%;
+                height: 100%;
+                line-height: pxTorem(44px);
+                text-align: center;
+            }
+        }
+    }
+    .active {
+        color: palevioletred;
+        border-bottom: 2px solid palevioletred;
+    }
+    .select {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        @include box_flex;
+        flex-shrink: 0;
+        overflow-x: hidden;
+        .swiper-wrapper {
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+                h3 {
+                    margin-top: pxTorem(10px);
+                    .img {
+                        width: pxTorem(35px);
+                        height: pxTorem(35px);
+                        border-radius: 50%;
+                        background: url(../images/qq9.jpg);
+                        background-size: 100% 100%;
+                        margin: pxTorem(4px) pxTorem(10px);
+                    }
+                    width: 100%;
+                    height: pxTorem(44px);
+                    line-height: pxTorem(44px);
+                    @include box_flex;
+                }
+                dl {
+                    width: 100%;
+                    padding: pxTorem(5px) pxTorem(20px);
+                    @include sizing;
+                    dd {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    dt {
+                        line-height: pxTorem(30px);
+                        font-size: pxTorem(18px);
+                        font-weight: bold;
+                    }
+                }
+                p {
+                    @include box_flex;
+                    @include justify(space-between);
+                    padding: 0 pxTorem(20px);
+                    @include sizing;
+                }
+            }
+        }
+    }
+}
+
+.foot {
+    width: 100%;
+    height: pxTorem(44px);
+    // border-top: pxTorem(1px) solid #ccc;
+    @include box_flex;
+    dl {
+        width: 100%;
+        height: 100%;
+        @include box_flex;
+        @include direction(column);
+        @include align;
+        @include justify;
+        dd {
+            i {
+                font-size: pxTorem(16px);
+            }
+        }
+    }
+    .else {
+        color: palevioletred;
+    }
+}
